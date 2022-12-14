@@ -21,7 +21,12 @@ Navbar connects all pages together with links
 
 Wireframe Links:
 Home - https://wireframe.cc/SiQiQv
-
+Coding - https://wireframe.cc/97QaPs
+Photography - https://wireframe.cc/telKdN
+Photography Album - https://wireframe.cc/VgkDre
+Cooking - https://wireframe.cc/JBVRek
+Cooking Recipe - https://wireframe.cc/ungrUF
+Blog - https://wireframe.cc/Nd4y7d
 
 
 Adding Content:
