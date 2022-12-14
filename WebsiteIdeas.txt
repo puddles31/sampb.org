@@ -1,0 +1,41 @@
+My Website
+
+What do I want to display on the website?
+- About me
+- Any coding projects I have done (e.g. Unity/GameMaker, Java things, etc. QUACKZILLA)
+- Photos from walks (Fife Coastal Path, Hill walking)
+- Some contact details (Website email address, GitHub, etc.)
+- Cooking - Show some recipes I use with pictures! Maybe make a recipe chooser idk
+- "Blog" posts? Maybe like an update page (e.g. "Fife Coastal Path - St Andrews to Newport" and have text + photos for it)
+
+
+Website Structure:
+- Home page: Show about me, most recent blog post, contact details
+- Coding page: Show details about previous coding projects
+- Photography page: Show photos from walks (do I want to show all photos at once, or group them? e.g. "Schiehallion Day Trip" group)
+- Cooking page: Show recipe details that I use
+- Blog page: Show blog posts that I add - text, date, images, etc.
+Navbar connects all pages together with links
+
+
+
+Wireframe Links:
+Home - https://wireframe.cc/SiQiQv
+
+
+
+Adding Content:
+- Create a program to convert simple text/markdown into a HTML page of the correct layout
+- For example, to add a new blog post I would first write the post contents in a markdown file:
+
+	## Title
+	# Header
+	Paragraph
+	@ Link
+	% Image
+	etc...
+
+- Then I would run the program from the command line, passing in the file path and layout type:
+	java HTMLGenerator new-blog-post.md blog
+	java HTMLGenerator new-photos.md photography
+- This will create a new text file that contains the HTML code to insert into the website on GitHub
