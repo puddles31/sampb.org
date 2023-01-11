@@ -1,3 +1,25 @@
-.h1 {
-    font-size: 1.4rem !important;
+span.h1 {
+    font-size: 1.5rem;
+}
+
+.container h2 {
+    font-size: 1.7rem;
+}
+
+.container p {
+    font-size: 1.1rem;
+}
+
+p a {
+    color: white;
+    text-decoration-color: #8D33EF;
+}
+
+p a:hover {
+    color: #8D33EF;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: #8D33EF;
 }
