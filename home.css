@@ -19,6 +19,10 @@ p a:hover {
     color: #8D33EF;
 }
 
+p i {
+    font-size: 1.5rem;
+}
+
 .nav-link.active {
     text-decoration: underline;
     text-decoration-color: #8D33EF;
