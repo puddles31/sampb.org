@@ -1,3 +1,35 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100% !important;
+    margin: 0 !important;
+    background-repeat: no-repeat !important;
+    
+}
+
+.bg-main {
+    background: rgb(41,23,79);
+    background: linear-gradient(170deg, rgba(41,23,79,1) 0%, rgba(119,38,96,1) 20%, rgba(185,69,97,1) 40%, rgba(232,119,88,1) 60%, rgba(254,181,85,1) 80%, rgba(249,248,113,1) 100%);}
+
+.bg-container {
+    background-color: #180b33;
+}
+
+.bg-navbar {
+    background-color: #0e0521;
+}
+
+.font-head {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 600 !important;
+}
+
+.font-body {
+    font-family: "Roboto Slab", sans-serif;
+}
+
 span.h1 {
     font-size: 1.5rem;
 }
@@ -10,17 +42,39 @@ span.h1 {
     font-size: 1.1rem;
 }
 
+.w-65 {
+    width: 65% !important;
+}
+
+
 p a {
     color: white;
     text-decoration-color: #8D33EF;
+    transition: all 0.2s;
 }
 
 p a:hover {
-    color: #8D33EF;
+    background: rgb(159,3,255);
+    background: linear-gradient(90deg, rgba(0,142,255,1) 0%, rgba(159,3,255,1) 50%, rgba(218,3,255,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
 }
 
 p i {
     font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: text-decoration 2s;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #8D33EF;
 }
 
 .nav-link.active {
