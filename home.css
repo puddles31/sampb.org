@@ -48,20 +48,41 @@ span.h1 {
 
 
 p a {
+    position: relative;
     color: white;
-    text-decoration-color: #8D33EF;
-    transition: all 0.2s;
-}
-
-p a:hover {
-    background: rgb(159,3,255);
-    background: linear-gradient(90deg, rgba(0,142,255,1) 0%, rgba(159,3,255,1) 50%, rgba(218,3,255,1) 100%);
-    background-size: 100%;
+    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
+    background-size: 400% 100%;
+    background-position: top left;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     background-clip: text;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+p a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 1.5px;
+    border-radius: 4px;
+    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
+    background-size: 400% 100%;
+    background-position: top left;
+    transition: ease 0.3s;
+}
+  
+
+p a:hover {
+    background-position: top left 80%;
+}
+
+p a:hover::before {
+    background-position: top left 80%;
 }
 
 p i {
