@@ -25,10 +25,10 @@ body {
 
 /* Fonts */
 .font-title {
-    font-family: "Consolas", sans-serif;
+    font-family: "Source Code Pro", sans-serif;
     font-size: 1.6rem !important;
     letter-spacing: 0.1rem;
-    font-weight: 550 !important;
+    font-weight: 800 !important;
 
     background: linear-gradient(135deg, rgba(88,4,255,1) 0%, rgba(159,3,255,1) 25%, rgba(218,3,255,1) 50%, rgba(159,3,255,1) 75%, rgba(88,4,255,1) 100%);
     background-size: 200% auto;
