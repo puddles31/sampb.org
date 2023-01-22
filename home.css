@@ -1,3 +1,4 @@
+/* Whole Page */
 html {
     min-height: 100%;
 }
@@ -6,12 +7,13 @@ body {
     min-height: 100% !important;
     margin: 0 !important;
     background-repeat: no-repeat !important;
-    
 }
 
+/* Backgrounds */
 .bg-main {
     background: rgb(41,23,79);
-    background: linear-gradient(170deg, rgba(41,23,79,1) 0%, rgba(119,38,96,1) 20%, rgba(185,69,97,1) 40%, rgba(232,119,88,1) 60%, rgba(254,181,85,1) 80%, rgba(249,248,113,1) 100%);}
+    background: linear-gradient(180deg, rgba(41,23,79,1) 0%, rgba(119,38,96,1) 33%, rgba(185,69,97,1) 67%, rgba(232,119,88,1) 100%);
+}
 
 .bg-container {
     background-color: #180b33;
@@ -21,33 +23,71 @@ body {
     background-color: #0e0521;
 }
 
+/* Fonts */
+.font-title {
+    font-family: "Consolas", sans-serif;
+    font-size: 1.6rem !important;
+    letter-spacing: 0.1rem;
+    font-weight: 550 !important;
+
+    background: linear-gradient(135deg, rgba(88,4,255,1) 0%, rgba(159,3,255,1) 25%, rgba(218,3,255,1) 50%, rgba(159,3,255,1) 75%, rgba(88,4,255,1) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+
+    -webkit-animation: movegradient 4s linear infinite;
+    -moz-animation: movegradient 4s linear infinite;
+    animation: movegradient 4s linear infinite;
+}
+
+/* Title Font Animation */
+@-webkit-keyframes movegradient {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@-moz-keyframes movegradient {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes movegradient {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Fonts */
+.font-nav {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+
 .font-head {
     font-family: "Roboto Slab", sans-serif;
-    font-weight: 600 !important;
+    font-size: 1.6rem !important;
+    font-weight: 550 !important;
 }
 
 .font-body {
     font-family: "Roboto Slab", sans-serif;
-}
-
-span.h1 {
-    font-size: 1.5rem;
-}
-
-.container h2 {
-    font-size: 1.7rem;
-}
-
-.container p {
     font-size: 1.1rem;
 }
 
+/* Custom Width Class */
 .w-65 {
     width: 65% !important;
 }
 
-
-p a {
+/* Links */
+/* Code for text gradient colour taken from https://fossheim.io/writing/posts/css-text-gradient/, last accessed on 22/01/23  */
+a.gradient-link {
     position: relative;
     color: white;
     background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
@@ -62,7 +102,8 @@ p a {
     transition: ease 0.3s;
 }
 
-p a::before {
+/* Code for text underline gradient colour taken from https://www.amitmerchant.com/gradient-text-underlines-using-css/, last accessed on 22/01/23 */
+.font-body a.gradient-link::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -76,29 +117,36 @@ p a::before {
     transition: ease 0.3s;
 }
   
-
-p a:hover {
+a.gradient-link:hover {
     background-position: top left 80%;
 }
 
-p a:hover::before {
+.font-body a.gradient-link:hover::before {
     background-position: top left 80%;
 }
 
-p i {
-    font-size: 1.5rem;
+
+/* Links in Navbar */
+.nav-item a.gradient-link:not(.active) {
+    position: relative;
+    color: rgb(153, 153, 153);
+    background: linear-gradient(100deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%) !important;
+    background-size: 400% 100% !important;
+    background-position: top left;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    transition: ease 0.3s;
 }
 
-.nav-link {
-    transition: text-decoration 2s;
+.nav-item a.gradient-link:not(.active):hover {
+    background-position: top left 80% !important;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
-    text-decoration-color: #8D33EF;
-}
-
-.nav-link.active {
-    text-decoration: underline;
-    text-decoration-color: #8D33EF;
+/* Social Media Icons */
+.icon {
+    font-size: 1.5rem !important;
 }
