@@ -1,6 +1,7 @@
 /* Whole Page */
 html {
     min-height: 100%;
+    scroll-padding-top: 74px;
 }
 
 body {
@@ -10,13 +11,19 @@ body {
 }
 
 /* Backgrounds */
-.bg-main {
-    background: rgb(41,23,79);
-    background: linear-gradient(180deg, rgba(41,23,79,1) 0%, rgba(119,38,96,1) 33%, rgba(185,69,97,1) 67%, rgba(232,119,88,1) 100%);
+.bg-main1 {
+    background: rgba(185,69,97,1);
+    background: linear-gradient(175deg, rgba(41,23,79,1) 0%, rgba(119,38,96,1) 33%, rgba(185,69,97,1) 67%, rgba(232,119,88,1) 100%);
+}
+
+.bg-main2 {
+    background: rgba(5,131,221,1);
+    background: linear-gradient(185deg, #0583dd 0%, #00ff88 100%);
 }
 
 .bg-container {
     background-color: #180b33;
+    background: linear-gradient(45deg, rgba(46,31,73,1) 0%, rgba(24,11,51,1) 100%);
 }
 
 .bg-navbar {
