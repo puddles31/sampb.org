@@ -157,3 +157,29 @@ a.gradient-link:hover {
 .icon {
     font-size: 1.5rem !important;
 }
+
+
+/* Square Image Container */
+.square {
+    padding-bottom: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Image Links */
+div[id^="img"] {
+    background-image: url("matterhorn.jpg");
+}
+
+/* #img1 {
+    background-image: url("matterhorn.jpg");
+}
+
+#img2 {
+    background-image: url("matterhorn.jpg");
+}
+
+#img3 {
+    background-image: url("matterhorn.jpg");
+} */
