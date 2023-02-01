@@ -10,6 +10,14 @@ body {
     background-repeat: no-repeat !important;
 }
 
+.navbar {
+    min-height: 80px !important;
+}
+
+.main-wrapper {
+    min-height: calc(100vh - 80px)
+}
+
 /* Backgrounds */
 .bg-main1 {
     background: rgba(185,69,97,1);
