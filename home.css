@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat !important;
 }
 
+/* Navbar and Main Body height */
 .navbar {
     min-height: 80px !important;
 }
@@ -77,7 +78,7 @@ body {
     }
 }
 
-/* Fonts */
+/* More Fonts */
 .font-nav {
     font-family: "Roboto Slab", sans-serif;
     font-size: 1.1rem !important;
