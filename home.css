@@ -123,6 +123,7 @@ a.gradient2 {
 a.gradient-link {
     position: relative;
     color: white;
+    font-weight: 700 !important;
     background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
     background-size: 400% 100% !important;
     background-position: top left !important;
