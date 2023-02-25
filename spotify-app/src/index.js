@@ -7,6 +7,7 @@ import SpotifyNowPlaying from './spotify/SpotifyNowPlaying';
 // const root = ReactDOM.createRoot(root);
 const container = document.getElementById('root');
 const root = createRoot(container);
+
 root.render(
     <React.StrictMode>
     <ChakraProvider>
@@ -14,12 +15,3 @@ root.render(
     </ChakraProvider>
   </React.StrictMode>
 );
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <ChakraProvider>
-//       <SpotifyNowPlaying />
-//     </ChakraProvider>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
