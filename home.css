@@ -1,59 +1,58 @@
-/* Whole Page */
+/* Colour Variables */
+:root {
+    --light-gradient-bg: linear-gradient(45deg, rgba(255,195,221,1) 0%, rgba(243,224,255,1) 50%, rgba(170,209,255,1) 100%);
+    --dark-bg: #0e0521;
+
+    --title-text-gradient: linear-gradient(135deg, rgba(88,4,255,1) 0%, rgba(159,3,255,1) 25%, rgba(218,3,255,1) 50%, rgba(159,3,255,1) 75%, rgba(88,4,255,1) 100%);
+    --main-graident-link: linear-gradient(100deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
+    --navbar-gradient-link: linear-gradient(100deg, rgba(200,200,200,1) 0%, rgba(200,200,200,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
+    --footer-text: rgba(200,200,200,1);
+}
+
+
+/* General Styling */
 html {
-    min-height: 100%;
-    scroll-padding-top: 74px;
+    scroll-padding-top: 84px;
 }
 
-body {
-    min-height: 100% !important;
-    margin: 0 !important;
-    background-repeat: no-repeat !important;
+
+/* Component Styling */
+.bg-navbar {
+    background: var(--dark-bg);
 }
 
-/* Navbar height */
-.navbar {
-    min-height: 80px !important;
+.bg-body {
+    background: var(--light-gradient-bg);
 }
 
-a .icon {
-    font-size: 3rem !important;
-
-    background: linear-gradient(90deg, rgba(88,4,255,1) 0%, rgba(159,3,255,1) 25%, rgba(218,3,255,1) 50%, rgba(159,3,255,1) 75%, rgba(88,4,255,1) 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-clip: text;
-
-    -webkit-animation: movegradient 4s linear infinite;
-    -moz-animation: movegradient 4s linear infinite;
-    animation: movegradient 4s linear infinite;
-}
-
-/* Backgrounds */
-.bg-main1 {
-    background: rgba(185,69,97,1);
-    background: linear-gradient(175deg, rgba(119,38,96,1) 0%, rgba(185,69,97,1) 50%, rgba(232,119,88,1) 100%);
-}
-
-.bg-main2 {
-    background: rgba(5,131,221,1);
-    background: linear-gradient(185deg, #0583dd 0%, #00ff88 100%);
+.bg-clouds {
+    background-image: url("resources/clouds.png");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .bg-container {
-    background-color: #180b33;
-    background: linear-gradient(45deg, rgba(46,31,73,1) 0%, rgba(24,11,51,1) 100%);
+    background: white;
+    border: 4px solid var(--dark-bg);
 }
 
-.bg-navbar {
-    background-color: #0e0521;
+.profile-image {
+    max-width: 250px;
+    width: 100%;
 }
 
-.bg-white {
-    background-color: white;
+.img-border {
+    border: 3px solid var(--dark-bg);
 }
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); 
+}
+
+.icon {
+    font-size: 4rem !important;
+}
+
 
 /* Fonts */
 .font-title {
@@ -62,7 +61,7 @@ a .icon {
     letter-spacing: 0.1rem;
     font-weight: 800 !important;
 
-    background: linear-gradient(135deg, rgba(88,4,255,1) 0%, rgba(159,3,255,1) 25%, rgba(218,3,255,1) 50%, rgba(159,3,255,1) 75%, rgba(88,4,255,1) 100%);
+    background: var(--title-text-gradient);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,24 +74,34 @@ a .icon {
     animation: movegradient 4s linear infinite;
 }
 
-.font-home {
-    font-family: "Source Code Pro", sans-serif;
-    font-size: 2.5rem !important;
-    letter-spacing: 0.1rem;
-    font-weight: 800 !important;
-
-    background: linear-gradient(135deg, rgba(88,4,255,1) 0%, rgba(159,3,255,1) 25%, rgba(218,3,255,1) 50%, rgba(159,3,255,1) 75%, rgba(88,4,255,1) 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-clip: text;
-
-    -webkit-animation: movegradient 4s linear infinite;
-    -moz-animation: movegradient 4s linear infinite;
-    animation: movegradient 4s linear infinite;
+span.font-small-title {
+    font-size: 1.4rem !important;
 }
+
+.font-nav {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: var(--footer-text);
+}
+
+.font-head {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 2.0rem !important;
+    font-weight: 600 !important;
+}
+
+.font-subhead {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.7rem !important;
+    font-weight: 550 !important;
+}
+
+.font-body {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.1rem;
+}
+
 
 /* Title Font Animation */
 @-webkit-keyframes movegradient {
@@ -113,57 +122,13 @@ a .icon {
     }
 }
 
-/* More Fonts */
-.font-nav {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-}
-
-.font-head {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 1.6rem !important;
-    font-weight: 550 !important;
-}
-
-.font-body {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 1.1rem;
-}
-
-/* Custom Width Class */
-.w-65 {
-    width: 65% !important;
-}
-
-.w-70 {
-    width: 70% !important;
-}
 
 /* Links */
-a.gradient1 {
-    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(119,38,96,1) 50%, rgba(185,69,97,1) 75%, rgba(232,119,88,1) 100%) !important;
-}
-
-.nav-item a.gradient1:not(.active) {
-    background: linear-gradient(100deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 25%, rgba(119,38,96,1) 50%, rgba(185,69,97,1) 75%, rgba(232,119,88,1) 100%) !important;
-}
-
-a.gradient2 {
-    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, #0583dd 66%, #00ff88 100%) !important;
-}
-
-.nav-item a.gradient2:not(.active) {
-    background: linear-gradient(100deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 33%, #0583dd 66%, #00ff88 100%) !important;
-}
-
-
 /* Code for text gradient colour taken from https://fossheim.io/writing/posts/css-text-gradient/, last accessed on 22/01/23  */
 a.gradient-link {
     position: relative;
-    color: white;
-    font-weight: 700 !important;
-    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
+    font-weight: 550 !important;
+    background: var(--main-graident-link);
     background-size: 400% 100% !important;
     background-position: top left !important;
     -webkit-background-clip: text !important;
@@ -175,8 +140,13 @@ a.gradient-link {
     transition: ease 0.3s;
 }
 
+a.nav-link, footer .gradient-link {
+    font-weight: 600 !important;
+    background: var(--navbar-gradient-link);
+}
+
 /* Code for text underline gradient colour taken from https://www.amitmerchant.com/gradient-text-underlines-using-css/, last accessed on 22/01/23 */
-.font-body a.gradient-link::before {
+.gradient-link-text::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -184,75 +154,16 @@ a.gradient-link {
     left: 0;
     height: 1.5px;
     border-radius: 4px;
-    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
+    background: var(--main-graident-link);
     background-size: 400% 100% !important;
     background-position: top left !important;
     transition: ease 0.3s;
 }
+
+footer .gradient-link-text::before {
+    background: var(--navbar-gradient-link);
+}
   
-a.gradient-link:hover {
+a.gradient-link:hover, .gradient-link-text:hover::before, a.gradient-link:hover .gradient-link-text::before, a.gradient-link:focus, .gradient-link-text:focus::before, a.gradient-link:focus .gradient-link-text::before {
     background-position: top left 80% !important;
 }
-
-.font-body a.gradient-link:hover::before {
-    background-position: top left 80% !important;
-}
-
-
-/* Links in Navbar */
-.nav-item a.gradient-link:not(.active) {
-    position: relative;
-    color: rgb(153, 153, 153);
-    background: linear-gradient(100deg, rgba(153,153,153,1) 0%, rgba(153,153,153,1) 25%, rgba(0,142,255,1) 50%, rgba(159,3,255,1) 75%, rgba(218,3,255,1) 100%);
-    background-size: 400% 100% !important;
-    background-position: top left;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-clip: text;
-    text-decoration: none;
-    transition: ease 0.3s;
-}
-
-.nav-item a.gradient-link:not(.active):hover {
-    background-position: top left 80% !important;
-}
-
-/* Social Media Icons */
-.icon {
-    font-size: 1.5rem !important;
-}
-
-
-/* Square Image Container */
-.square {
-    padding-bottom: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: default;
-    transition: transform 0.2s;
-}
-
-.square:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-/* Image Links */
-div[id^="img"] {
-    background-image: url("matterhorn.jpg");
-}
-
-/* #img1 {
-    background-image: url("matterhorn.jpg");
-}
-
-#img2 {
-    background-image: url("matterhorn.jpg");
-}
-
-#img3 {
-    background-image: url("matterhorn.jpg");
-} */
