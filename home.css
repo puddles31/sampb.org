@@ -25,11 +25,11 @@ html {
     background: var(--light-gradient-bg);
 }
 
-.bg-clouds {
+/* .bg-clouds {
     background-image: url("resources/clouds.png");
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 .bg-container {
     background: white;
@@ -45,9 +45,9 @@ html {
     border: 3px solid var(--dark-bg);
 }
 
-.carousel-control-prev, .carousel-control-next {
+/* .carousel-control-prev, .carousel-control-next {
     filter: invert(100%); 
-}
+} */
 
 .icon {
     font-size: 4rem !important;
@@ -99,7 +99,7 @@ span.font-small-title {
 
 .font-body {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 
@@ -137,7 +137,7 @@ a.gradient-link {
     -moz-text-fill-color: transparent !important;
     background-clip: text !important;
     text-decoration: none;
-    transition: ease 0.3s;
+    /* transition: ease 0.3s; */
 }
 
 a.nav-link, footer .gradient-link {
@@ -157,7 +157,7 @@ a.nav-link, footer .gradient-link {
     background: var(--main-graident-link);
     background-size: 400% 100% !important;
     background-position: top left !important;
-    transition: ease 0.3s;
+    /* transition: ease 0.3s; */
 }
 
 footer .gradient-link-text::before {
