@@ -51,14 +51,34 @@
 
                     <div class="col-12 py-3"></div>
 
-                    <div id="about-me" class="row my-5 py-5 px-4 align-items-center bg-body rounded-4">
-                        <h2 class="font-head">About Me</h2>
-                        <div class="col-2 d-md-none"></div>
-                        <div class="col-8 col-md-4 col-xl-3 py-4 text-center">
-                            <img src="resources/sam_profile_picture.jpg" class="profile-image img-border rounded-3" alt="An image of a man smiling at the camera">
+                    <div class="py-4 d-flex flex-column align-items-center text-center">
+                        <div style="position: relative; width: 450px; height: 450px;">
+                            <svg id="circle-text" viewBox="0 0 400 400">
+                                <defs>
+                                    <path id="MyPath"
+                                        d="M 200, 200
+                                            m -150, 0
+                                            a 150,150 0 1,1 300,0
+                                            a 150,150 0 1,1 -300,0
+                                " />
+                                </defs>
+
+                                <text font-family="'Roboto Slab', sans-serif" font-size="20" letter-spacing="1px" fill="white">
+                                    <textPath xlink:href="#MyPath">
+                                        One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen • 
+                                    </textPath>
+                                </text>
+
+                            </svg>
+
+                            <img src="resources/sam_profile_pic.png" class="profile-image img-border rounded-circle" alt="An image of a man smiling at the camera">
                         </div>
-                        <div class="col-2 d-md-none"></div>
-                        <div class="col-12 col-md-8 col-xl-9">
+                    </div>
+
+                    <div id="about-me" class="my-5 py-5 px-4 d-flex flex-column align-items-center bg-body rounded-4">
+                        <!-- <h2 class="font-head">About Me</h2> -->
+                        
+                        <div class="text-center">
                             <p class="font-body">
                                 Hey! My name is Sam, and I'm a recent Computer Science graduate from the University of St Andrews,
                                 now working as a Software Engineer at NCR Atleos in Dundee.
@@ -113,7 +133,7 @@
                                         is a program developed in Java designed to help a user solve a Rubik's cube. 
                                         Using <nobr><a class="gradient-link gradient-link-text" href="https://ruwix.com/the-rubiks-cube/notation/" target="_blank">Rubik's Cube notation</a>,</nobr> 
                                         the program allows the user to input the state of their cube, and then provides a step-by-step solution to solve the cube.
-                                        This project is still in development, and will be improved over time. 
+                                        This project is still in development and will be improved over time.
                                         Planned additions include a graphical user interface, allowing a user to input the cube state by clicking on the faces of a cube, 
                                         and various improvements to the solving algorithm to make it more efficient.
                                     </p>

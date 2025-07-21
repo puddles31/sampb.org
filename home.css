@@ -19,6 +19,7 @@ html {
 /* Component Styling */
 .bg-navbar {
     background: var(--dark-bg);
+    border-bottom: 5px solid #1f113d;
 }
 
 .bg-body {
@@ -37,17 +38,42 @@ html {
 }
 
 .profile-image {
-    max-width: 250px;
+    max-width: 350px;
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#circle-text {
+    position: absolute;
+    width: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 .img-border {
     border: 3px solid var(--dark-bg);
 }
 
-/* .carousel-control-prev, .carousel-control-next {
-    filter: invert(100%); 
-} */
 
 .icon {
     font-size: 4rem !important;
