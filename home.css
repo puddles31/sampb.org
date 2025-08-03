@@ -56,7 +56,7 @@ html {
     z-index: 2;
 
     animation-name: rotate;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
